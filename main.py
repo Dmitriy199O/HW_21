@@ -37,9 +37,11 @@ def main():
 	print(f'\nВ "{from_}" хранится:')
 	for k, v in store.get_items.items():
 		print(f' - {k}: {v}')
+	print(f'Свободного места осталось: {store.get_free_space()}')
 	print(f'\nВ "{to}" хранится:')
 	for k, v in shop.get_items.items():
 		print(f' - {k}: {v}')
+	print(f'Свободного места осталось: {shop.get_free_space()}')
 
 
 # Запускаем программу
